@@ -1,0 +1,50 @@
+@import url(../font/font.css);
+@import url(./reset.css);
+
+footer {
+    width: 100%;
+    background-color: #151515;
+    color: rgb(196, 196, 196);
+    font-size: 0.875em;
+    font-weight: 400;
+}
+
+footer .ft_lg {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+footer .textBox {
+    width: 1320px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex: 1;
+    word-spacing: 1px;
+}
+
+footer .textBox .leftTx {
+    width: 100%;
+
+}
+
+footer .textBox .rightTx {
+    width: 100%;
+    text-align: right;
+
+}
+
+footer .ft_ic {
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: right;
+    /* background-color: red; */
+}
+
+footer .ft_ic img {
+    width: 30px;
+    height: auto;
+    filter: invert(1);
+    /* 필터로 색상반전 검 -> 흰 */
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성심당</title>
+    <link rel="stylesheet" href="./css/main/header.css">
+    <link rel="stylesheet" href="./css/sub_01_css/form.css">
+    <link rel="stylesheet" href="./css/main/footer.css">
+    <link rel="icon" type="image/png" sizes="16x16 32x32 48x48 64x64" href="./prop/fabicon/s13_icon11.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- ------------------------------------------------------------------HEADER------------------------ -->
+    <header>
+
+        <div class=" top-nav">
+
+            <h1 class="logo">
+                <a href="./index.html"><img src="./prop/main/header/logo_han.png" alt="성심당 로고"></a>
+            </h1>
+
+            <div class="small-gnb">
+                <ul>
+                    <li><a href="javascript:void(0);" target="_self">로그인 </a></li>
+                    <li><a href="./sub_01.html" target="_self">불편접수 </a></li>
+                    <li>
+                        <div class="shopmall">
+                            <a href="javascript:void(0);" target="_self">성심당몰</a>
+                            <img src="./prop/main/header/shopmallicon/w.png" alt=" White">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class=" clearfix">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">소개</a>
+                    <ul class="sub_menu">
+                        <li><a href="javascript:void(0);">회사소개</a></li>
+                        <li><a href="javascript:void(0);">연혁</a></li>
+                        <li><a href="javascript:void(0);">CI</a></li>
+                        <li><a href="javascript:void(0);">성심당 이야기</a></li>
+                        <li><a href="javascript:void(0);">재무제표</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">우리의길</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">EoC 프로젝트</a></li>
+                        <li><a href="javascript:void(0);">무지개 프로젝트</a></li>
+                        <li><a href="javascript:void(0);">에코성심 프로젝트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">브랜드</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">제품</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">제품 목록</a></li>
+                        <li><a href="javascript:void(0);">제품별 성분표시</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">미디어</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">성심당 미디어</a></li>
+                        <li><a href="javascript:void(0);">커뮤니티</a></li>
+                        <li><a href="javascript:void(0);">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ------------------------------------------------------------------/HEADER------------------------ -->
+    <section class="product_problem">
+        <h2>문의하기</h2>
+        <p>* 는 필수 입력사항입니다.</p>
+
+        <form action="#" method="post">
+
+            <div class="two_side">
+                <ul>
+                    <li>
+                        <label for="name">*작성자명</label>
+                        <input type="text" id="name">
+                    </li>
+                    <li>
+                        <label for="tel">*휴대폰번호</label>
+                        <input type="tel" id="tel" maxlength="3">&nbsp;&nbsp;-&nbsp;&nbsp;
+                        <input type="tel" id="tel" maxlength="4">&nbsp;&nbsp;-&nbsp;&nbsp;
+                        <input type="tel" id="tel" maxlength="4">
+                    </li>
+                    <li>
+                        <label for="email">*이메일</label>
+                        <input type="email" id="email">&nbsp;&nbsp;@&nbsp;&nbsp;
+                        <input type="email" id="email" name="email" list="email_list">
+                        <datalist id="email_list">
+                            <option value="naver.com">
+                            <option value="google.com">
+                            <option value="daum.com">
+
+                        </datalist>
+                    </li>
+                    <li>
+                        <label for="compain">*문의유형</label>
+                        <input type="" id="compain" name="compain" list="compain_list" placeholder="[선택]">
+                        <datalist id="compain_list">
+                            <option value="이물">
+                            <option value="제품 파손">
+                            <option value="결제 오류">
+                            <option value="포장 오류 및 누락">
+                            <option value="고객 응대">
+                            <option value="기타">
+                        </datalist>
+                    </li>
+                    <li>
+                        <label for="shop">*구매(이용)매장</label>
+                        <input type="text" id="shop" name="shop" list="shop_list">
+                        <datalist id="shop_list">
+                            <option value="성심당본점">
+                            <option value="케잌부띠끄">
+                        </datalist>
+
+                        <!-- data리스트로 작업하면 안이쁨 -> select & option으로 작업하자 -->
+                    </li>
+                    <li>
+                        <label for="datetime-local">*결제일시</label>
+                        <input type="datetime-local" id="datetime-local">
+                        <!-- 날짜랑 시간 넣기 -->
+                    </li>
+                    <li>
+                        <label for="paymethod">*결제수단</label>
+                        <input type="" id="paymethod" name="paymethod" list="y" placeholder="[선택]">
+                        <datalist id="y">
+                            <option value="카드">
+                            <option value="현금">
+                            <option value="상품권">
+                            <option value="기프티콘">
+                            <option value="멤버쉽 포인트">
+                            <option value="복합결제">
+                        </datalist>
+                    </li>
+                    <li>
+                        <label for="">*결제금액</label>
+                        <input type="text" id="" placeholder="직접 작성해주세요. (예시 : 33500)">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="one_side">
+                <ul>
+                    <li><label for="problem_story">*문의내용</label>
+                        <textarea name="problem_story" id="problem_story" ma>
+                        </textarea>
+                    </li>
+                    <li><label for="pay_history"> 결제내역</label>
+                        <input type="file" id="pay_history">
+                        <div class="pay_history_tx">
+                            <p>※ 영수증 혹은 카드승인내역을 첨부해주세요.</p>
+                            <p>※ 결제내역 첨부 : 신용카드 혹은 체크카드 결제 시에만 해당</p>
+                            <p>※ 현금/상품권/기프티콘 결제 시 부득이 결제금액 확인이 어려울 경우 현금영수증 발행번호 기재 부탁드립니다.</p>
+                            <p>※ 멤버십 포인트 사용 혹은 적립하셨을 경우에는 어플 내에서 전자영수증 확인이 가능합니다.</p>
+                        </div>
+                    </li>
+                    <li><label for="product_img"> 제품사진첨부</label>
+                        <input type="file" id="product_img">
+                        <div class="product_img_tx">
+                            <p>※ 이물 혹은 파손 시에만 해당됩니다.</p>
+                            <p>※ 사진 및 파일은 최대 5개까지 등록 가능합니다.</p>
+                            <p>※ 10MB 이내의 이미지 파일 업로드 부탁드립니다.</p>
+                            <br>
+                            <p class="strong">※ 첨부파일은 상담 외의 목적으로는 사용되지 않습니다.</p>
+                            <p class="strong">※ 첨부파일 형식 및 내용이 1:1 문의 내용과 맞지 않는 경우(비방,음란,고유식별정보 포함 등)관리자에 의해 자동 삭제 될 수
+                                있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="personal_info">*개인정보 수집 <br>및 이용동의</label>
+                        <div class="personal_info">
+                            <h4>1. 정보 수집및 이용 목적</h4>
+                            <p>- 문의사항에 대해 서비스 제공을 위한 기록 보전</p>
+
+                            <h4>2. 수집하는 개인정보 항목</h4>
+                            <p>
+                                - 필수항목 : 휴대폰 번호, 문의유형, 구매(이용)매장, 결제일시, 결제수단, 결제금액, 문의내용
+                                <br>- 선택항목 : 이메일, 결제내역 첨부, 제품사진 첨부
+                            </p>
+
+                            <h4>3. 개인정보의 이용기간</h4>
+                            <p>- 문의 검토 완료 후 1년간 보관</p>
+                        </div>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="personal_info" name="personal_info">
+                            <p>위 내용에 동의합니다.(필수)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="last_tx">
+                <p>문의주신 내용은 업무시간 내 순차적으로 답변드릴 수 있도록 하겠습니다.
+                    <br>
+                    (고객센터 운영시간 : 09:00~17:00 (점심시간 12:00~13:00) / 연중무휴)
+                </p>
+            </div>
+
+            <div class="button_group">
+                <button type="button">작성완료</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- ------------------------------------------------------------------FOOTER------------------------ -->
+    <footer>
+        <div class="ft_lg">
+            <img src="./prop/main/footer/logo_kr.png" width="205" height="auto" alt="성심당로고">
+        </div>
+
+        <div class="textBox">
+            <div class="leftTx">
+                <p>이용약관 개인정보처리방침</p>
+                <p>로쏘주식회사 대표.임영진 사업자등록번호.305-81-48738 주소.대전광역시중구대종로480번길15</p>
+                <p>Tel.1588-8069 Fax.(042)257-2984 E-mail.Bread@sunsimdang.co.kr</p>
+                <p>COPYRIGHT©SUNGSIMDANG Co.,Ltd.ALL RIGHT RESERVED</p>
+            </div>
+
+            <div class="rightTx">
+                <p>1588-8069</p>
+                <p>운영시간 - 09:00 ~ 17:00 (점심시간 12:00 ~ 13:00) / 연중무휴</p>
+                <p>■ 불편사항접수:cs@sungsimdang.co.kr</p>
+                <p>*메일접수는 운영시간 외에도 가능하며 메일 회신은 접수 순서대로 진행됩니다.</p>
+                <p>조속한 처리를 위해 노력하겠습니다.</p>
+            </div>
+        </div>
+
+        <div class="ft_ic">
+            <a href="javascript:void(0);"><img src="./prop/main/footer/facebook-brands-solid-full.svg"
+                    alt="facebook"></a>
+            <a href="javascript:void(0);"><img src="./prop/main/footer/instagram-brands-solid-full.svg"
+                    alt="instagram"></a>
+            <a href="javascript:void(0);"><img src="./prop/main/footer/youtube-brands-solid-full.svg" alt="youtube"></a>
+
+        </div>
+
+    </footer>
+    <!-- ------------------------------------------------------------------/FOOTER------------------------ -->
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+@import url(../font/font.css);
+@import url(./reset.css);
+
+body {
+    background-color: rgb(246, 246, 246);
+}
+
+.product_problem {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.1em;
+    font-weight: 400;
+
+}
+
+.product_problem h2 {
+    width: 100%;
+    height: 100px;
+    margin: 50px 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'GapyeongHanseokbongBigBrush';
+    font-weight: 500;
+    font-display: swap;
+    font-size: 3em;
+    line-height: 100px;
+}
+
+.product_problem>p {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #000;
+    text-align: right;
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------폼태그시작 */
+
+
+.product_problem form {
+    width: 100%;
+}
+
+/* -------------------------------------------------------폼태그 구간1 시작 */
+.product_problem form .two_side {
+    width: 100%;
+}
+
+.product_problem form .two_side ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_problem form .two_side ul li {
+    width: 50%;
+    padding: 30px 0;
+    display: flex;
+}
+
+
+.product_problem form .two_side ul li label {
+    display: block;
+    width: 250px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.product_problem form .two_side ul li input {
+    display: block;
+    width: 250px;
+    height: 40px;
+}
+
+.product_problem form .two_side ul li input#tel {
+    display: block;
+    width: 70px;
+
+}
+
+.product_problem form .two_side ul li input#email {
+    display: block;
+    width: 100px;
+
+}
+
+/* -------------------------------------------------------폼태그 구간2 시작 */
+
+.product_problem form .one_side {
+    width: 100%;
+}
+
+.product_problem form .one_side ul {
+    width: 100%;
+    display: block;
+}
+
+.product_problem form .one_side ul li {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+}
+
+.product_problem form .one_side ul li label {
+    display: block;
+    width: 250px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: ;
+}
+
+.product_problem form .one_side ul li input {
+    display: block;
+    width: 200px;
+    height: 30px;
+}
+
+/* -------------------------------------------------------폼태그 구간2 문의내용 시작 */
+.product_problem form .one_side ul li textarea {
+    width: 910px;
+    height: 200px;
+    resize: none;
+}
+
+.product_problem form .one_side ul li:first-child label {
+    height: 200px;
+    line-height: 200px;
+}
+
+/* -------------------------------------------------------폼태그 구간2 결제내역 시작 */
+.product_problem form .one_side ul li:nth-child(2) {
+    flex-wrap: wrap;
+}
+
+.product_problem form .one_side ul li:nth-child(2) input {
+    width: 910px;
+    height: 40px;
+    border: 1px solid #868686;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+.product_problem form .one_side ul li .pay_history_tx {
+    width: 800px;
+    margin-left: 250px;
+}
+
+.product_problem form .one_side ul li:nth-child(2) p {
+    margin: 0;
+    font-weight: 400;
+    padding: 5px 0 0 0px;
+}
+
+/* -------------------------------------------------------폼태그 구간2 제품사진첨부 시작 */
+
+.product_problem form .one_side ul li:nth-child(3) {
+    flex-wrap: wrap;
+}
+
+.product_problem form .one_side ul li:nth-child(3) input {
+    width: 910px;
+    height: 40px;
+    border: 1px solid #868686;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+.product_problem form .one_side ul li .product_img_tx {
+    width: 900px;
+    margin-left: 250px;
+}
+
+.product_problem form .one_side ul li:nth-child(3) p {
+    margin: 0;
+    padding: 5px 0 0 0px;
+    font-weight: 400;
+}
+
+.product_problem form .one_side ul li:nth-child(3) p.strong {
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------폼태그 구간2 개인정보수집 시작 */
+
+.product_problem form .one_side ul li:nth-child(4) {
+    flex-wrap: wrap;
+}
+
+.product_problem form .one_side ul li:nth-child(4) .personal_info {
+    width: 910px;
+    height: 180px;
+    overflow: auto;
+    border: 1px solid #868686;
+    padding: 10px;
+
+    h4 {
+        margin: 0;
+        padding: 5px;
+    }
+
+    p {
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+.product_problem form .one_side ul li:nth-child(4) .checkbox_group {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    margin-left: 250px;
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+
+    }
+}
+
+.product_problem form .last_tx {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 50px 0;
+    font-size: 0.875em;
+}
+
+
+.button_group {
+    width: 200px;
+    margin: 0 auto 200px auto;
+
+}
+
+.button_group button {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #b2b2b2;
+    border-radius: 40px;
+    font-size: 1.3em;
+    color: #868686;
+    background-color: rgb(0, 0, 0, 0);
+    transition: all 0.3s;
+}
+
+.button_group button:hover {
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #322c2a;
+
+}

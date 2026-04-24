@@ -1,0 +1,88 @@
+@import url(../../font/font.css);
+@import url(../reset.css);
+
+article {
+    width: 100%;
+    margin: 0 auto;
+    height: 2100px;
+    background: url(../../prop/main/article/BREAD.png) no-repeat top center;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+article h2 {
+    margin: 0;
+    padding: 0;
+}
+
+article .text_article {
+    width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'GapyeongHanseokbongBigBrush';
+}
+
+article .text_article h2 {
+    width: 100%;
+    font-size: 12em;
+    font-family: 'GapyeongHanseokbongBigBrush';
+    font-weight: 600;
+    font-display: swap;
+    color: #bd7b4e;
+    text-shadow: 3px 3px 5px #3f352e;
+}
+
+article .text_article p:first-of-type {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 3.8em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+}
+
+article .text_article p:last-of-type {
+    width: 65%;
+    margin: 20px auto;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.8;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+article .button_article {
+    width: 100%;
+    position: relative;
+    bottom: -90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+article .button_article a {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.7em;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-weight: 400;
+    color: #605a55;
+    box-shadow: 2px 2px 10px rgb(113, 113, 113);
+    transition: all 0.4s ease;
+}
+
+article .button_article a:hover {
+    color: black;
+    background-color: #ffffff;
+}
+
+article .button_article a:active {
+    background-color: black;
+    color: white;
+}

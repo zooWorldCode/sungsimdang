@@ -1,0 +1,104 @@
+@import url(../../font/font.css);
+@import url(../reset.css);
+
+
+#brandVisual {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 800px;
+    background: #8c908c;
+}
+
+#brandVisual ul {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+#brandVisual ul li {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+}
+
+#brandVisual ul li a {
+    display: block;
+    text-indent: -9999px;
+}
+
+/* 글씨 제거 */
+
+/* visual_0, visual_1, visual_2 위치정렬 */
+#brandVisual .visual_0 {
+    left: 0;
+    background: url(../../prop/main/aside/Artboard\ 1.png) 50% 0 no-repeat;
+    background-size: cover;
+}
+
+#brandVisual .visual_1 {
+    left: 100%;
+    background: url(../../prop/main/aside/Artboard\ 1.png) 50% 0 no-repeat;
+    background-size: cover;
+}
+
+#brandVisual .visual_2 {
+    left: 200%;
+    background: url(../../prop/main/aside/Artboard\ 1.png) 50% 0 no-repeat;
+    background-size: cover;
+}
+
+/* 버튼 위치 지정 */
+#buttonList:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#buttonList li {
+    background: url(../../prop/main/aside/btnVisual.png) 0 -16px no-repeat;
+    width: 14px;
+    height: 15px;
+    float: left;
+    position: relative;
+    left: 50%;
+    top: -100px;
+    overflow: hidden;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#buttonList li a {
+    display: block;
+    text-indent: -9999px;
+}
+
+/* 글씨 제거 */
+
+
+/* 활성화된 버튼 */
+#buttonList li.on {
+    background-position: 0 0;
+}
+
+
+
+/* 화살표 */
+.btnImg {
+    width: 100%;
+    position: relative;
+    top: -450px;
+}
+
+.btnImg .prev {
+    position: absolute;
+    left: 100px;
+    cursor: pointer;
+}
+
+.btnImg .next {
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+}

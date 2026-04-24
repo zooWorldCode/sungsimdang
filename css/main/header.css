@@ -1,0 +1,162 @@
+@import url(../../font/font.css);
+@import url(../reset.css);
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 200;
+    font-display: swap;
+}
+
+header {
+    width: 100%;
+    height: 235px;
+    background-color: #151515;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+
+header .top-nav {
+    padding: 40px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    border-bottom: 1px solid #322c2a;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    /* h1 꼭 0 0 하기 안그럼 여백생김*/
+}
+
+header img {
+    width: 200px;
+}
+
+header .small-gnb ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header .small-gnb ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+header .small-gnb ul li a {
+    width: 130px;
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 20px;
+    letter-spacing: 2px;
+}
+
+header .small-gnb ul li:nth-child(2) {
+    border-left: 2px solid #322c2a;
+    border-right: 2px solid #322c2a;
+}
+
+header .small-gnb ul li img {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 15px;
+}
+
+
+header .small-gnb ul li:hover {
+    color: #ffc953;
+}
+
+/* gnb아이콘 안넣어짐 같이 작동안됨 커서 안됨
+gnb에 밑줄 넣으면 한픽셀씩 밑으로 밀리는 느낌 */
+
+
+
+/* ----------------------------------------------------------------/* N A V */
+nav {
+    width: 100%;
+    height: auto;
+}
+
+nav>ul {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* flex는 꼭 부모에게! */
+
+}
+
+nav>ul>li {
+    width: 200px;
+    position: relative;
+}
+
+/* ul이 여러개라 꺽새 표시를 정확하게 하고
+가장 직계 자식인 ul에게만!
+플룻으로 인라인, 포지션 설정해서 기준점 잡기
+이래야 li 자식 ul까지 영향이 안가
+ */
+
+nav>ul>li>a {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+
+nav>ul>li>a:hover {
+    color: #ffc953;
+}
+
+/* ----------------------------------------------------------------/* 서브메뉴 */
+nav ul ul {
+    width: 100%;
+    display: none;
+    margin: 1px auto;
+    border-radius: 0 0 20px 20px;
+    padding: 5px 10px;
+    background-color: #322c2a;
+    color: white;
+}
+
+nav ul ul li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+
+}
+
+nav ul ul li:hover {
+    color: #ffc953;
+}
+
+/* 메인메뉴에 마우스 올리면 서브메뉴가 보여지게 */
+nav>ul>li:hover ul {
+    display: block;
+}
+
+/* 메인메뉴에 포커스시 서브메뉴가 보여지게 */
+nav>ul>li>a:focus+ul {
+    display: block;
+}

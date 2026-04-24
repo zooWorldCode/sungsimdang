@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>팝업창</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* 스크롤바 숨기기 */
+            overflow: hidden;
+            /* 내용이 창 크기를 넘어가더라도 절대 줄바꿈이나 스크롤을 허용 안 함 */
+            display: inline-block;
+        }
+
+        img {
+            display: block;
+        }
+
+        form {
+            width: 100%;
+            height: 30px;
+            background-color: rgb(45, 45, 45);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        form .bt {
+            border: none;
+            background-color: transparent;
+            color: white;
+        }
+    </style>
+    <script>
+        //쿠키 설정 함수
+        function setCookie(name, value, expiredays) {
+            //현재 날짜 객체 생성
+            const todayDate = new Date();
+
+            //만료일 수를 현재 날짜에 더해
+            todayDate.setDate(todayDate.getDate() + expiredays);
+
+            //쿠키 설정: 이름, 값, 만료일, 경로를 포함
+            document.cookie = `${name}=${encodeURIComponent(value)}; expires=${todayDate.toUTCString()}; path=/`;
+
+        }
+
+        //창 닫기 함수
+        function closeWin() {
+            //체크 박스가 선택되었는지 확인
+            if (document.frm.event.checked) {
+                //체크박스가 선택된 경우, 쿠키를 설정하여 다음 방문시에 팝업이 열리지 않도록
+                setCookie("memo", "no", 1); //쿠키이름, 값, 만료일
+            }
+            //현재 창 닫기
+            window.close();
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="./prop/popup/img.png" alt="팝업이미지">
+    <!-- <h1>팝업 창</h1> -->
+    <!-- <p>아래의 체크박스에 체크한 후 창을 닫으면 다음에 방문할 때는 창이 열리지 않습니다.</p> -->
+
+    <form name="frm"> <!-- 폼 이름을 "frm"으로 지정하여 자바스크립트에서 참조 가능 -->
+        <label><input type="checkbox" name="event">다음부터 이 창을 열지 않음</label>
+        <!-- "닫기" 버튼 클릭 시 closeWin 함수 호출 -->
+        <input type="button" value="닫기" onclick="closeWin()" class="bt">
+    </form>
+</body>
+
+</html>
